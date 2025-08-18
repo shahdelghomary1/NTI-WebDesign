@@ -1,0 +1,117 @@
+
+@media (max-width: 431px) {
+   
+    .text-center {
+        width: 100%;
+    }
+    .d-hidden {
+        display: none;
+    }
+    .get-started{
+        display: none;
+    }
+    .fa-list {
+      
+        font-size: 1.5rem;
+        color: white;
+        align-self: center;
+    }
+        .logo {
+            width: 50%;
+        }
+        .text-center button {
+            width: 37%;
+        }
+         .fa-list {
+        display: block;
+    }
+    .fa-magnifying-glass{
+        display: block;
+        align-self: flex-end;
+    }
+    .search-bar {
+        display: none;
+        
+    }
+    .fa-magnifying-glass{
+        justify-content: flex-end;
+    }
+    .product {
+        width: 100%;
+    }
+   .buttons button {
+    width: 15%;
+    }
+    .view-more {
+        display: none;
+    }
+    .shop-content {
+    width: 58%;
+}
+  .featured-products {
+        flex-direction: column;
+      }
+
+      .product {
+        flex: 1 1 100%; 
+        margin: 10px 0;
+      }
+
+      .overlay {
+        padding: 15px;
+      }
+
+      .overlay .top h2 {
+        font-size: 14px;
+      }
+
+      .overlay .middle h3 {
+        font-size: 16px;
+      }
+
+      .overlay .middle p {
+        font-size: 12px;
+      }
+
+      .button-overlay {
+        padding: 6px 12px;
+        font-size: 12px;
+      }
+      .image-group{
+
+        display: none;
+      }
+      .about-us-content{
+        width: 100%;
+      }
+      .adoption {
+    width: 100%;
+}
+.team {
+    width: 100%;
+}
+.team .cardd {
+
+}
+ .contact-section {
+    flex-direction: column;
+  }
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter-form input {
+    width: 100%;
+  }
+  .newsletter-form button {
+    width: 100%;
+  }
+
+}
+@media (min-width: 429px) {
+   
+   
+}
