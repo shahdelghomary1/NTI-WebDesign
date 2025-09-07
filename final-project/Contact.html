@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+<link rel="icon" type="image/png" href="https://merto-be87.kxcdn.com/merto/wp-content/themes/merto/images/logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/drift-zoom/dist/drift-basic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        
+</head>
+<body>
+  <div class="navbar-top py-4 border-bottom" id="fixedNavbar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="logo">
+      <img class="img-fluid" style="max-height:40px;" src="https://merto-be87.kxcdn.com/merto/wp-content/themes/merto/images/logo.png" alt="Merto Logo">
+    </div>
+    <div class="d-flex align-items-center hover-red-text">
+      <i class="fa-solid fa-phone me-2 fs-4 hover-red-text"></i>
+      <span class="hover-red-text">Contact us 24/7 <br><strong>(+92) 3942 7879</strong></span>
+    </div>
+<div class="d-flex align-items-center rounded overflow-hidden bg-secondary bg-opacity-10 position-relative" style="height: 55px;">
+
+  <div class="position-relative d-inline-block">
+    <select class="form-select border-0 fw-semibold rounded-0 rounded-start h-100 bg-transparent" 
+            style="max-width: 180px;">
+      <option>All Categories</option>
+      <option>Electronics</option>
+      <option>Clothes</option>
+    </select>
+
+    <span class="position-absolute top-50 end-0 translate-middle-y bg-secondary" 
+          style="width:2px; height:20px;"></span>
+  </div>
+
+  <div class="position-relative" style="max-width: 300px;">
+    <input type="text" 
+           class="form-control border-0 bg-transparent h-100 pe-5 rounded-0" 
+           placeholder="Search for products...">
+    <i class="fa-solid fa-magnifying-glass text-white bg-dark rounded d-flex align-items-center justify-content-center position-absolute top-50 end-0 translate-middle-y me-1" 
+       style="width: 35px; height: 45px;"></i>
+  </div>
+
+</div>
+
+    <div class="d-flex align-items-center gap-4">
+
+
+  <div class="dropdown">
+    <a class="d-flex align-items-center text-decoration-none text-dark dropdown-toggle hover-red-text" href="#" role="button" data-bs-toggle="dropdown">
+      <img src="https://flagcdn.com/us.svg" width="20" class="me-2 hover-red-text"> English
+    </a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/fr.svg" width="20" class="me-2"> French</a></li>
+      <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/de.svg" width="20" class="me-2"> German</a></li>
+    </ul>
+  </div>
+
+
+  <div class="dropdown">
+    <a class="text-dark text-decoration-none dropdown-toggle hover-red-text" href="#" role="button" data-bs-toggle="dropdown">
+      USD
+    </a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">EUR</a></li>
+      <li><a class="dropdown-item" href="#">EGP</a></li>
+    </ul>
+  </div>
+
+  <a href="#" class="d-flex align-items-center text-dark text-decoration-none fw-semibold hover-red-text">
+    <i class="fa-regular fa-user me-1 hover-red-text"></i> Account
+  </a>
+
+  <a href="#" class="position-relative text-dark me-2">
+    <i class="fa-regular fa-heart fs-5 hover-red-text"></i>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+  </a>
+
+
+  <a href="#" class="position-relative text-dark">
+    <i class="fa-solid fa-cart-shopping fs-5 hover-red-text"></i>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+  </a>
+  
+  <!-- Menu Toggle Button -->
+  <button class="btn btn-link text-dark p-0 ms-3" id="headerMenuToggleBtn" style="display: none;">
+    <i class="bi bi-list fs-4"></i>
+  </button>
+
+</div>
+
+  </div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom"  id="secondNavbar">
+  <div class="container ">
+   <div class="d-flex align-items-stretch">
+  <div class="d-flex align-items-center border-end px-3">
+    <button class="border-0 bg-transparent fw-semibold hover-red-text" type="button" data-bs-toggle="offcanvas" 
+          data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+      <i class="fa-solid fa-bars hover-red-text"></i> SHOP BY CATEGORIES
+    </button>
+  </div>
+</div>
+
+
+
+   
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark hover-red-text" href="#" role="button" data-bs-toggle="dropdown">Homepages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Homepage 1</a></li>
+            <li><a class="dropdown-item" href="#">Homepage 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle hover-red-text" href="#" role="button" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Category 1</a></li>
+            <li><a class="dropdown-item" href="#">Category 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-dark hover-red-text" href="#">Products</a></li>
+        <li class="nav-item"><a class="nav-link text-dark hover-red-text" href="#">Pages</a></li>
+        <li class="nav-item"><a class="nav-link text-dark hover-red-text" href="#">About us</a></li>
+        <li class="nav-item"><a class="nav-link text-dark hover-red-text" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-dark fw-bold hover-red-text" href="#"><i class="fa-solid fa-tags hover-red-text"></i> Best Discount</a></li>
+      </ul>
+      <div>
+        <a href="#" class="nav-link hover-red-text">Recently viewed</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <button class="btn btn-dark position-fixed" id="scrollToTopBtn" style="bottom: 20px; right: 20px; z-index: 1000; display: none;
+    ">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <section class="overflow-hidden">
+
+
+
+
+   
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown border-start">
+          <a class="nav-link dropdown-toggle text-dark hover-red-text" href="#" role="button" data-bs-toggle="dropdown">Homepages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Homepage 1</a></li>
+            <li><a class="dropdown-item" href="#">Homepage 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle hover-red-text" href="#" role="button" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Category 1</a></li>
+            <li><a class="dropdown-item" href="#">Category 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-dark hover-red-text" href="#">Products</a></li>
+        <li class="nav-item"><a class="nav-link text-dark hover-red-text" href="#">Pages</a></li>
+        <li class="nav-item"><a class="nav-link text-dark hover-red-text" href="#">About us</a></li>
+        <li class="nav-item"><a class="nav-link text-dark hover-red-text" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-dark fw-bold hover-red-text" href="#"><i class="fa-solid fa-tags hover-red-text"></i> Best Discount</a></li>
+      </ul>
+      <div>
+        <a href="#" class="nav-link hover-red-text">Recently viewed</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" 
+     id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel"  style="z-index: 2000 !important; ">
+
+  <div class="offcanvas-header bg-black text-white">
+    
+      <button class="border-0 bg-black text-white  " type="button" data-bs-toggle="offcanvas" 
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+      <i class="fa-solid fa-bars hover-red-text"></i> SHOP BY CATEGORIES
+    </button>
+    
+  </div>
+
+  <div class="offcanvas-body w-100 ">
+    <ul class="category-list w-100 d-flex flex-column gap-3  ">
+    <li class="border-bottom d-flex justify-content-between p-2 "><span class="mx-3"><i class="fa-solid fa-shirt mx-2"></i> Fashion</span> <i class="fa-solid fa-chevron-right mx-3 text-secondary"></i></li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-mobile-screen-button mx-2"></i> Phone & Tablet</span> <i class="fa-solid fa-chevron-right mx-3 text-secondary"></i></li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-laptop mx-2"></i> Laptop & Computer</span> <i class="fa-solid fa-chevron-right mx-3 text-secondary"></i></li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-tv mx-2"></i> TV, Audio – Video</span> <i class="fa-solid fa-chevron-right mx-3 text-secondary"></i></li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-camera mx-2"></i> Camera & Photo</span> </li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-couch mx-2"></i> Home & Decor</span> <i class="fa-solid fa-chevron-right mx-3 text-secondary"></i></li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-heart mx-2"></i> Beauty & Health</span> <i class="fa-solid fa-chevron-right mx-3 text-secondary"></i></li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-gamepad mx-2"></i> Game Accessories</span> </li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-car mx-2"></i> Autopart</span> <i class="fa-solid fa-chevron-right mx-3 text-secondary"></i></li>
+  </ul>
+  
+
+  
+  </div>
+</div>
+
+
+<section class="container-sm py-5 px-5 w-75 mt-4">
+  <h1 class="fw-bold text-center  custom-heading">Contact us</h1>
+  <p class="text-secondary text-center mb-4">34 Main Street, Los Angeles 9021<br>United States</p>
+
+  <div class="mt-4">
+   
+   <div class="row justify-content-center mb-5">
+  <div class="col-md-10">
+    <div class="row gx-4">
+      <div class="col-md-3 mb-4 text-start">
+        <i class="fa-solid fa-phone-volume fa-2x mb-3"></i>
+        <h6 class="mb-2">Customer service</h6>
+        <a href="tel:+9239427879" class="d-block mb-1 text-dark hover-red-text">+92 3942 7879</a>
+        <small class="text-secondary">Call us from 8am to 8pm</small>
+      </div>
+      <div class="col-md-3 mb-4 text-start">
+        <i class="fa-solid fa-comment-dots fa-2x mb-3"></i>
+        <h6 class="mb-2">Chat with us</h6>
+        <span class=" fw-semibold d-block mb-1">● Live Chat</span>
+        <small class="text-secondary">Daily: 8 am to 8 pm</small>
+      </div>
+      <div class="col-md-3 mb-4 text-start">
+        <i class="fa-solid fa-envelope fa-2x mb-3"></i>
+        <h6 class="mb-2">Write to us</h6>
+        <a href="mailto:contact@example.com" class="d-block text-dark hover-red-text">contact@example.com</a>
+      </div>
+      <div class="col-md-3 mb-4 text-start">
+        <i class="fa-solid fa-user-plus fa-2x mb-3"></i>
+        <h6 class="mb-3">Follow us</h6>
+        <div class="d-flex gap-3">
+          <a class="text-secondary hover-red-text" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="text-secondary hover-red-text" href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a class="text-secondary hover-red-text" href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a class="text-secondary hover-red-text" href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    <h4 class="fw-bold mb-4 text-center">Do you have some questions?</h4>
+   <form id="contactForm" class="row g-3 justify-content-center">
+  <div class="col-md-5">
+    <input id="name" class="form-control bg-secondary-subtle" type="text" placeholder="Name and Surname *">
+    <small class="text-danger d-none" id="nameError">Please enter your name</small>
+  </div>
+
+  <div class="col-md-5">
+    <input id="email" class="form-control bg-secondary-subtle" type="email" placeholder="Email *">
+    <small class="text-danger d-none" id="emailError">Please enter a valid email</small>
+  </div>
+
+  <div class="col-md-10">
+    <input id="subject" class="form-control bg-secondary-subtle" type="text" placeholder="Subject *">
+    <small class="text-danger d-none" id="subjectError">Please enter a subject</small>
+  </div>
+
+  <div class="col-md-10">
+    <textarea id="message" class="form-control bg-secondary-subtle" rows="5" placeholder="Message"></textarea>
+    <small class="text-danger d-none" id="messageError">Please enter your message</small>
+  </div>
+
+  <div class="col-md-10">
+    <button type="submit" class="btn btn-dark w-100 py-2 hover-red border-0">GET IN TOUCH</button>
+  </div>
+</form>
+  </div>
+</section>
+<div class="map-container my-5">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.939220245556!2d-118.243684684782!3d34.05223438060943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7c9e4e5f5e3%3A0x4b0b0b0b0b0b0b0b!2sDowntown%20Los%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1690000000000" width="100%"  height="400" style="border:0;"  allowfullscreen=""  loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+<section class="container py-5">
+  <h2 class="fw-bold text-center mb-5">Stores around the world</h2>
+  <div class="row justify-content-center g-4">
+    
+    
+    <div class="col-md-4">
+  <div class="card h-100 border-0  overflow-hidden no-hover-effects image-hover-opacity">
+    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/about-2.jpg" class="card-img-top rounded-bottom " alt="Store Image">
+    <div class="card-body p-0 mt-3">
+      <h5 class="fw-bold mb-1">Los Angeles</h5>
+      <p class="text-muted mb-1">34 Main Street, Los Angeles 9021</p>
+      <p class=" text-muted  mb-1">United States</p>
+      <p class="mb-0"> +02 123 567 88</p>
+    </div>
+  </div>
+</div>
+
+
+    
+    <div class="col-md-4">
+      <div class="card h-100 border-0 no-hover-effects  image-hover-opacity">
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/about-3.jpg" class="card-img-top rounded-bottom " alt="Store Image">
+        <div class="card-body p-0 mt-3">
+          <h5 class="fw-bold mb-1">New York</h5>
+          <p class="text-muted mb-1">515 Broadway, 10015 New York</p>
+          <p class="text-muted mb-1">United States</p>
+          <p class="mb-0"> +49 123 567 88</p>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="col-md-4">
+      <div class="card h-100 border-0  no-hover-effects image-hover-opacity">
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/about-4.jpg" class="card-img-top rounded-bottom   " alt="Store Image">
+        <div class="card-body  p-0 mt-3">
+          <h5 class="card-title fw-bold">California</h5>
+          <p class="card-text text-muted  mb-1">1000 California St 68104 Omaha</p>
+          <p class="card-text  text-muted mb-1">United States</p>
+          <p class="card-text "> +44 123 567 88</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<a href="#" class="bg-dark text-white d-none position-fixed bottom-0 end-0 mb-3 me-3  p-1 rounded" id="topBtn" style="z-index: 9999;">
+  <i class="fa-solid fa-arrow-up fs-5"></i>
+</a>
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row gy-4">
+
+      
+      <div class="col-md-3">
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/logo.png" alt="Merto Logo" class="img-fluid mb-3" style="max-height: 50px;">
+
+        <p class=" text-secondary"><i class="fa-solid fa-location-dot mx-2 text-secondary"></i> 29 St. 2nd Ave, Miami, Florida 33131 </p>
+
+        <p class=" text-secondary"><i class="fa-solid fa-envelope mx-2 text-secondary"></i>merto@example.com</p>
+        <p class="mb-0 fw-bold fs-3 hover-red-text"> (+92) 3942 7879</p>
+      </div>
+
+      
+      <div class="col-md-2">
+        <h6 class="fw-bold mb-3">SHOPPING</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text mb-5">Wishlist</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text  mb-5">Shop by Brand</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text  mb-5">Offers</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text  mb-5">Track Order</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text  mb-5">Size Guide</a></li>
+        </ul>
+      </div>
+
+        
+      <div class="col-md-2">
+        <h6 class="fw-bold mb-3">INFORMATION</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">Track Order</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">Shipping & Returns</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">About us</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">Help</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">Gift Cards</a></li>
+        </ul>
+      </div>
+
+     
+      <div class="col-md-2">
+        <h6 class="fw-bold mb-3">ACCOUNT</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">Cart</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">My Account</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">My Orders</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">Wishlist</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">Affiliate Program</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="col-md-3">
+      <h6 class="fw-bold mb-5">Let’s keep in touch</h6>
+  
+ <form class="position-relative mb-4" style="max-width: 400px;">
+  <input type="email" class="form-control  pe-5 dg-dark border-light border-opacity-25" placeholder="enter your email address">
+
+
+
+  <button type="submit"
+          class="bg-transparent position-absolute top-50 end-0 translate-middle-y me-3 text-white p-0 border-0  text-light text-opacity-25 hover-red-text">
+    <i class="fa-solid fa-arrow-right fs-5"></i>
+  </button>
+</form>
+
+  
+  <div class="d-flex gap-3">
+    <a href="#"><i class="fa-brands fa-facebook-f text-white fs-5 hover-red-text"></i></a>
+    <a href="#"><i class="fa-brands fa-tiktok text-white fs-5 hover-red-text"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube text-white fs-5 hover-red-text"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter text-white fs-5 hover-red-text"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram text-white fs-5 hover-red-text"></i></a>
+  </div>
+</div>
+
+    </div>
+
+
+    <div class="row mt-5 text-center border p-5 border-light border-opacity-25">
+      <div class="col-md-4 mb-4 mb-md-0">
+  <div class="d-flex align-items-start gap-3">
+    <i class="fa-solid fa-phone mt-1 fs-4 "></i>
+    <div class="text-start">
+      <p class="mb-0 fw-bold">Didn't find what you were looking for?</p>
+      <a href="#" class="text-white text-decoration-underline fw-bold">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4 mb-md-0">
+  <div class="d-flex align-items-start gap-3">
+   <i class="fa-solid fa-face-smile fs-4"></i>
+    <div class="text-start">
+      <p class="mb-0 fw-bold">How can we help you today? </p>
+      <a href="#" class="text-white text-decoration-underline fw-bold">Help Center</a>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="col-md-4 mb-4 mb-md-0">
+  <div class="d-flex align-items-start gap-3">
+   <i class="fa-regular fa-circle fs-4"></i>
+    <div class="text-start">
+      <p class="mb-0 fw-bold">We'd love to hear what you think </p>
+      <a href="#" class="text-white text-decoration-underline fw-bold">Give Feedback</a>
+    </div>
+  </div>
+</div>
+    </div>
+
+    
+    <div class="row mt-4 align-items-center text-center">
+      <div class="col-md-6 mb-3 mb-md-0 text-start">
+       <small class="text-white-50">Copyright © Merto. All Rights Reserved</small>
+      </div>
+      <div class="col-md-6 text-end">
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/payment-icons-1.png" alt="Payment Icons" class="img-fluid" style="max-height: 40px;">
+      </div>
+    </div>
+
+   
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> 
+   <script src="js/script.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("headerMenuToggleBtn");
+    const secondNavbar = document.getElementById("secondNavbar");
+    const topBtn = document.getElementById("topBtn");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 100) {
+        menuBtn.style.display = "inline-block";
+      } else {
+        menuBtn.style.display = "none";
+        secondNavbar.classList.remove("hide-navbar");
+      }
+      if (window.scrollY > 300) {
+        topBtn.classList.remove("d-none");
+      } else {
+        topBtn.classList.add("d-none");
+      }
+    });
+
+    if (menuBtn) {
+      menuBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        secondNavbar.classList.toggle("hide-navbar");
+      });
+    }
+
+    if (topBtn) {
+      topBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+  });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const off = document.getElementById('offcanvasWithBothOptions');
+  if (off) {
+   
+    if (off.parentElement !== document.body) {
+      document.body.appendChild(off);
+    }
+    off.style.position = 'fixed';
+    off.style.top = '0';
+    off.style.left = '0';
+    off.style.right = '0';
+    off.style.zIndex = '99999';
+    const obs = new MutationObserver(() => {
+      const backdrop = document.querySelector('.offcanvas-backdrop');
+      if (backdrop) {
+        backdrop.style.position = 'fixed';
+        backdrop.style.zIndex = '99998';
+      }
+    });
+
+    obs.observe(document.body, { childList: true, subtree: true });
+  } else {
+    console.warn('offcanvas element not found: #offcanvasWithBothOptions');
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product Page</title>
+<link rel="icon" type="image/png" href="https://merto-be87.kxcdn.com/merto/wp-content/themes/merto/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/drift-zoom/dist/drift-basic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+</head>
+
+<body>
+         <div class="navbar-top py-4 border-bottom" id="fixedNavbar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="logo">
+      <img class="img-fluid" style="max-height:40px;" src="https://merto-be87.kxcdn.com/merto/wp-content/themes/merto/images/logo.png" alt="Merto Logo">
+    </div>
+    <div class="d-flex align-items-center hover-red-text">
+      <i class="fa-solid fa-phone me-2 fs-4 hover-red-text"></i>
+      <span class="hover-red-text">Contact us 24/7 <br><strong>(+92) 3942 7879</strong></span>
+    </div>
+<div class="d-flex align-items-center rounded overflow-hidden bg-secondary bg-opacity-10 position-relative" style="height: 55px;">
+ <div class="position-relative d-inline-block">
+  <select class="form-select border-0 fw-semibold rounded-0 rounded-start h-100 bg-secondary bg-opacity-10" 
+          style="max-width: 180px;">
+    <option>All Categories</option>
+    <option>Electronics</option>
+    <option>Clothes</option>
+  </select>
+
+
+  <span class="position-absolute top-50 end-0 translate-middle-y bg-secondary" 
+        style="width:2px; height:20px;"></span>
+</div>
+
+  <div class="position-relative" style="max-width: 300px;">
+  <input type="text" 
+         class="form-control border-0 bg-secondary bg-opacity-10 h-100 pe-5 rounded-0" 
+         placeholder="Search for products...">
+  <i class="fa-solid fa-magnifying-glass text-white bg-dark rounded d-flex align-items-center justify-content-center position-absolute top-50 end-0 translate-middle-y me-1" 
+     style="width: 35px; height: 45px;"></i>
+</div>
+ 
+</div>
+
+    <div class="d-flex align-items-center gap-4">
+
+
+  <div class="dropdown">
+    <a class="d-flex align-items-center text-decoration-none text-dark dropdown-toggle hover-red-text" href="#" role="button" data-bs-toggle="dropdown">
+      <img src="https://flagcdn.com/us.svg" width="20" class="me-2 hover-red-text"> English
+    </a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/fr.svg" width="20" class="me-2"> French</a></li>
+      <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/de.svg" width="20" class="me-2"> German</a></li>
+    </ul>
+  </div>
+
+
+  <div class="dropdown">
+    <a class="text-dark text-decoration-none dropdown-toggle hover-red-text" href="#" role="button" data-bs-toggle="dropdown">
+      USD
+    </a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">EUR</a></li>
+      <li><a class="dropdown-item" href="#">EGP</a></li>
+    </ul>
+  </div>
+
+  <a href="#" class="d-flex align-items-center text-dark text-decoration-none fw-semibold hover-red-text">
+    <i class="fa-regular fa-user me-1 hover-red-text"></i> Account
+  </a>
+
+  <a href="#" class="position-relative text-dark me-2">
+    <i class="fa-regular fa-heart fs-5 hover-red-text"></i>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+  </a>
+
+
+  <a href="#" class="position-relative text-dark">
+    <i class="fa-solid fa-cart-shopping fs-5 hover-red-text"></i>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+  </a>
+  
+  <!-- Menu Toggle Button -->
+  <button class="btn btn-link text-dark p-0 ms-3" id="headerMenuToggleBtn" style="display: none;">
+    <i class="bi bi-list fs-4"></i>
+  </button>
+
+</div>
+
+  </div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom"  id="secondNavbar">
+  <div class="container ">
+   <div class="d-flex align-items-stretch">
+  <div class="d-flex align-items-center border-end px-3">
+    <button class="border-0 bg-transparent fw-semibold hover-red-text" type="button" data-bs-toggle="offcanvas" 
+          data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+      <i class="fa-solid fa-bars hover-red-text"></i> SHOP BY CATEGORIES
+    </button>
+  </div>
+</div>
+
+
+
+   
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark hover-red-text" href="#" role="button" data-bs-toggle="dropdown">Homepages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Homepage 1</a></li>
+            <li><a class="dropdown-item" href="#">Homepage 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle hover-red-text" href="#" role="button" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Category 1</a></li>
+            <li><a class="dropdown-item" href="#">Category 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-dark hover-red-text" href="#">Products</a></li>
+        <li class="nav-item"><a class="nav-link text-dark hover-red-text" href="#">Pages</a></li>
+        <li class="nav-item"><a class="nav-link text-dark hover-red-text" href="#">About us</a></li>
+        <li class="nav-item"><a class="nav-link text-dark hover-red-text" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-dark fw-bold hover-red-text" href="#"><i class="fa-solid fa-tags hover-red-text"></i> Best Discount</a></li>
+      </ul>
+      <div>
+        <a href="#" class="nav-link hover-red-text">Recently viewed</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <button class="btn btn-dark position-fixed" id="scrollToTopBtn" style="bottom: 20px; right: 20px; z-index: 1000; display: none;
+    ">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <section class="overflow-hidden">
+
+
+        
+        <div class="container px-md-0 py-3 f-13">
+
+            <span><a href="https://demo.theme-sky.com/merto"
+                    class="text-dark text-decoration-none home-hover">Home</a></span>
+            <span><a href="https://demo.theme-sky.com/merto"
+                    class="text-dark text-decoration-none home-hover">shop</a><i
+                    class="bi bi-chevron-right mx-1"></i></span>
+            <span><a href="https://demo.theme-sky.com/merto"
+                    class="text-dark text-decoration-none home-hover">Fashion</a><i
+                    class="bi bi-chevron-right mx-1"></i></span>
+            <span><a href="https://demo.theme-sky.com/merto"
+                    class="text-dark text-decoration-none home-hover">Women</a><i
+                    class="bi bi-chevron-right mx-1"></i></span>
+            <span><a href="https://demo.theme-sky.com/merto"
+                    class="text-dark text-decoration-none home-hover">Shorts</a></span>
+            <span class="text-secondary"><i class="bi bi-chevron-right mx-1"></i> Barbie Baseball Hat Cap Berkshire
+                Fashions New</span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col">
+                    <div class="">
+                        <div class="row ">
+
+                            <!-- ✅ Indicators -->
+                            <div class="col-md-2 col-2 d-flex flex-column px-2 px-md-0 ">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active border-dark barbie-indicators" aria-current="true"
+                                    aria-label="Slide 1" style=" background-image: url('https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2.jpg');">
+                                </button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    class="barbie-indicators" aria-label="Slide 2"
+                                    style=" background-image: url('https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2.jpg');">
+                                </button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    class="barbie-indicators" aria-label="Slide 3"
+                                    style=" background-image: url('https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2.jpg');">
+                                </button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    class="barbie-indicators" aria-label="Slide 4"
+                                    style=" background-image: url('https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2.jpg');">
+                                </button>
+                            </div>
+
+                            
+                            <div class="col-md-10 col-9 ms-md-0 ms-2 border border-1">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active zoom-wrapper">
+                                            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2.jpg"
+                                                class=" zoomable d-block w-100"
+                                                data-zoom="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/fashion-8-300x300.jpg"
+                                                alt="Slide 1">
+                                        </div>
+                                        <div class="carousel-item zoom-wrapper ">
+                                            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2.jpg" class="d-block w-100 zoomable" alt="Slide 2">
+                                        </div>
+                                        <div class="carousel-item zoom-wrapper">
+                                            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2.jpg" class="d-block w-100 zoomable"
+                                                alt="Slide 3">
+                                        </div>
+                                        <div class="carousel-item zoom-wrapper">
+                                            <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2.jpg" class="d-block w-100 zoomable" alt="Slide 4">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 ">
+                    <div class="container ms-md-3">
+                        <span>Apple</span>
+                        <h1 class="f-26 fw-semibold	">Apple Watch Series 9 GPS 45mm, Aluminum Case with Sport Band</h1>
+                        <span class="star empty">&#9734;</span>
+                        <span class="star empty">&#9734;</span>
+                        <span class="star empty">&#9734;</span>
+                        <span class="star empty">&#9734;</span>
+                        <span class="star empty">&#9734;</span>
+                        <span class="text-secondary">(0 Reviews)</span>
+                        <a href="#" class="text-secondary f-13 underline-hover-black">Write a review</a>
+
+                        <ul class="list-unstyled py-md-3 pt-3">
+                            <li class="f-14"><i class="bi bi-check2 text-success me-1"></i>WatchOS</li>
+                            <li class="f-14"><i class="bi bi-check2 text-success me-1"></i> Memory 32 GB</li>
+                            <li class="f-14"><i class="bi bi-check2 text-success me-1"></i> Battery Lithium</li>
+                        </ul>
+                        <bdi class="fw-medium f-26 ">$12</bdi>
+                        <div class="bg-light-green width-fit-content rounded-2 mt-2 mb-4">
+                            <span class="text-success px-2 f-14 ">In stock</span>
+
+                        </div>
+                        <div class="d-flex gap-2 justify-content-between align-items-center px-2 action-bar w-100">
+                           
+                            <div class="input-group bg-color-ee rounded-3 py-md-1" style="max-width: 105px;">
+                                <button class="btn" type="button" id="button-minus">-</button>
+                                <input type="text" class="form-control bg-color-ee text-center border-0"
+                                    id="input-number" value="1" min="1">
+                                <button class="btn" type="button" id="button-plus">+</button>
+                            </div>
+                            <button class="btn add btn-dark py-md-2 px-4 fw-semibold flex-grow-1 hover-btn-add">
+                                <span class="mx-2">+</span>Add to cart
+                            </button>
+                            <a href="https://demo.theme-sky.com/merto/checkout/"
+                                class="btn btn-danger py-md-2 px-3 fw-semibold hover-btn-buy">
+                                BUY NOW
+                            </a>
+                        </div>
+
+
+
+                        <div class="f-12 py-3">
+                            <a href="" id="" class="text-decoration-none pe-4 icon-span-wrapper">
+                                <i class="fa-regular fa-heart fs-7  rounded-2 f-12 text-secondary wishlistIco"
+                                    id=""></i>
+                                <span id="" class="text-secondary iconspan">Add to Wishlist</span></a>
+                            <a href="#" class="lang-hover text-decoration-none text-secondary">
+                                <i class="fa-solid fa-arrow-right-arrow-left fs-7 "></i>
+                                <span class="">Add to compare </span>
+                            </a>
+                        </div>
+                        <hr>
+                        <p class="text-secondary f-14 mb-2">SKU: <span class="text-dark">KGVT48C82S</span></p>
+                        <p class="text-secondary f-14">Categories: <span class="text-dark">Shorts, Skirts</span></p>
+                        <div class="d-flex gap-3 fs-6 justify-content-center justify-content-md-start ">
+                            <i class="bi bi-facebook lang-hover"></i>
+                            <i class="bi bi-pinterest lang-hover"></i>
+                            <i class="bi bi-twitter-x lang-hover"></i>
+                            <i class="bi bi-linkedin lang-hover"></i>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container bg-light-green my-5 rounded-2">
+            <div class="row mx-3 align-items-center">
+                <div class="col-md-4">
+                    <h3 class="f-26 fw-semibold">
+                        Earn Cash Back For The Things You Buy Every Where
+                    </h3>
+                    <p class="f-13">
+                        Application via Merto. <span class="underline-hover-black">Terms & Conditions.</span>
+                    </p>
+                </div>
+                <div class="col-md  text-center p-0 width-fit-content">
+                    <button class="btn f-13 px-4 py-3 bg-success hover-buttons-bg-white hover-buttons-green text-light">
+                        VIEW MORE</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/payments-2-1.png" alt="">
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container mb-5">
+            <div class="nav-buttons border-bottom mb-5 py-1">
+                <a href="#" class="tab-btn text-dark f-26 underline-hover text-decoration-none  fw-semibold pe-2 active"
+                    data-target="#div1">Description</a>
+                <a href="#" class="tab-btn text-secondary f-26 underline-hover fw-semibold px-2 border-end border-start text-decoration-none"
+                    data-target="#div2">Specifications</a>
+                <a href="#" class="tab-btn text-secondary f-26 underline-hover fw-semibold ps-2 text-decoration-none"
+                    data-target="#div3">Reviews (0)</a>
+            </div>
+            <div class="tab-content">
+                <div id="div1" class="tab-box row">
+                    <div class="col-5">
+                        <p>Compellingly grow performance based mindshare through parallel
+                            potentialities. Rapidiously underwhelm top-line catalysts for change before best-of-breed
+                            materials. Competently brand timely catalysts for change through sustainable systems.
+                            Completely expedite ubiquitous bandwidth after integrated action items. Progressively
+                            transform leading-edge supply chains whereas flexible niche markets.</p>
+                    </div>
+                    <div class="col-7">
+                        <div class="card no-hover-effects">
+
+                            <div class="d-flex align-items-start p-3 bg-color-ee f-14">
+                                <strong class="me-4" style="min-width: 150px;">Shipping</strong>
+                                <span>We currently offer free shipping worldwide on all orders over $100.</span>
+                            </div>
+
+                            <div class="d-flex align-items-start p-3 f-14">
+                                <strong class="me-4" style="min-width: 150px;">Sizing</strong>
+                                <span>Fits true to size. Do you need size advice?</span>
+                            </div>
+
+                            <div class="d-flex align-items-start p-3 bg-color-ee f-14">
+                                <strong class="me-4" style="min-width: 150px;">Return & exchange</strong>
+                                <span>If you are not satisfied with your purchase you can return it to us within 14 days
+                                    for an exchange or refund.</span>
+                            </div>
+
+                            <div class="d-flex align-items-start p-3 f-14">
+                                <strong class="me-4" style="min-width: 150px;">Assistance</strong>
+                                <span>Contact us on (+44) 555 88 65, or email us at support@themesky.com</span>
+                            </div>
+
+                        </div>
+                    </div>
+<div class="container my-5">
+  <div class="row align-items-center">
+    
+   
+    <div class="col-md-6">
+      <h2 class="fw-bold mb-1 fs-1 fw-bold">iPad Pro</h2>
+      <h3 class="fw-semibold mb-4">Supercharged by</h3>
+      <p class="mb-4">
+        Astonishing performance. Incredibly advanced displays. Superfast wireless connectivity. 
+        Next-level Apple Pencil capabilities. Powerful new features in iPadOS. 
+        The ultimate iPad experience.
+      </p>
+      <a href="#" class="btn btn-dark">WATCH THE FILM</a>
+    </div>
+
+    
+    <div class="col-md-6 text-end">
+      <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/product-detail-1.png" 
+           alt="iPad Pro" class="img-fluid">
+    </div>
+
+  </div>
+</div>
+                </div>
+                <div id="div2" class="tab-box d-none no-hover-effects">
+                    <div class="card shadow-none no-hover-effects">
+
+                        <div class="d-flex align-items-start p-3 bg-color-ee f-14">
+                            <strong class="me-4" style="min-width: 150px;">Shipping</strong>
+                            <span>We currently offer free shipping worldwide on all orders over $100.</span>
+                        </div>
+
+                        <div class="d-flex align-items-start p-3 f-14">
+                            <strong class="me-4" style="min-width: 150px;">Sizing</strong>
+                            <span>Fits true to size. Do you need size advice?</span>
+                        </div>
+
+                        <div class="d-flex align-items-start p-3 bg-color-ee f-14">
+                            <strong class="me-4" style="min-width: 150px;">Return & exchange</strong>
+                            <span>If you are not satisfied with your purchase you can return it to us within 14 days for
+                                an exchange or refund.</span>
+                        </div>
+
+                        <div class="d-flex align-items-start p-3 f-14">
+                            <strong class="me-4" style="min-width: 150px;">Assistance</strong>
+                            <span>Contact us on (+44) 555 88 65, or email us at support@themesky.com</span>
+                        </div>
+                        <div class="d-flex align-items-start p-3 bg-color-ee f-14">
+                            <strong class="me-4" style="min-width: 150px;">Return & exchange</strong>
+                            <span>If you are not satisfied with your purchase you can return it to us within 14 days for
+                                an exchange or refund.</span>
+                        </div>
+
+                        <div class="d-flex align-items-start p-3 f-14">
+                            <strong class="me-4" style="min-width: 150px;">Assistance</strong>
+                            <span>Contact us on (+44) 555 88 65, or email us at support@themesky.com</span>
+                        </div>
+                        <div class="d-flex align-items-start p-3 bg-color-ee f-14">
+                            <strong class="me-4" style="min-width: 150px;">Return & exchange</strong>
+                            <span>If you are not satisfied with your purchase you can return it to us within 14 days for
+                                an exchange or refund.</span>
+                        </div>
+
+                        <div class="d-flex align-items-start p-3 f-14">
+                            <strong class="me-4" style="min-width: 150px;">Assistance</strong>
+                            <span>Contact us on (+44) 555 88 65, or email us at support@themesky.com</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="div3" class="tab-box d-none">
+                    <div class="row no-hover-effects">
+                        <div class="col-2 ">
+                            <p class="fs-1 fw-semibold text-center">0.00</p>
+                            <span class="text-secondary ">Based on 0 reviews</span>
+                            <p class="f-14 mt-5">There are no reviews yet.</p>
+
+
+                        </div>
+                        <div class="col-10">
+                            <div class="d-flex align-items-center ">
+                                <span class="f-14">5</span>
+                                <span class="me-1 text-dark f-14">★</span>
+                                <div
+                                    style="flex-grow: 1; height: 4px; border-radius: 5px; background-color: #ccc;; max-width: 300px;">
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center ">
+                                <span class="f-14 ">4</span>
+                                <span class="me-1 text-dark f-14">★</span>
+                                <div
+                                    style="flex-grow: 1; height: 4px; border-radius: 5px; background-color: #ccc;; max-width:300px;">
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center ">
+                                <span class="f-14">2</span>
+                                <span class="me-1 text-dark f-14">★</span>
+                                <div
+                                    style="flex-grow: 1; height: 4px; border-radius: 5px; background-color: #ccc;; max-width: 300px;">
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center ">
+                                <span class="f-14 ">2</span>
+                                <span class="me-1 text-dark f-14">★</span>
+                                <div
+                                    style="flex-grow: 1; height: 4px; border-radius: 5px; background-color: #ccc;; max-width: 300px;">
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center ">
+                                <span class="f-14 ">5</span>
+                                <span class="me-1 text-dark f-14">★</span>
+                                <div
+                                    style="flex-grow: 1; height: 4px; border-radius: 5px; background-color: #ccc;; max-width: 300px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bg-color-ee p-5 rounded-2">
+                        <p class="f-26 fw-semibold">Be the first to review “Barbie Baseball Hat Cap Berkshire Fashions
+                            New”</p>
+                        <p class="f-14">Your email address will not be published. Required fields are marked <span
+                                class="text-danger">*</span></p>
+                        <p class="f-14">Your rating <span class="text-danger">*</span> <span class="f-20">☆☆☆☆☆</span>
+                        </p>
+                        <div class="d-flex align-items-center gap-3 flex-wrap f-14">
+                            <p class="mb-0">Choose pictures (maxsize: 50kB, max files: 2)</p>
+
+                            <input type="file" id="fileInput" class="custom-file-input" multiple>
+
+                            <span id="fileName" class="file-name"></span>
+                        </div>
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" id="name" class="form-control focus-border-black">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" class="form-control focus-border-black">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="review" class="form-label text-decrion-none">Review</label>
+                                <textarea id="review" class="form-control py-4 focus-border-black" rows="4"></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="btn btn-dark hover-buttons-bg-red hover-buttons-border-red px-5">Submit</button>
+                        </form>
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+       
+      
+
+
+ <div class="container d-flex justify-content-between mb-2">
+            <div>
+                <p class="h2 f-26 fw-semibold"> Related products</p>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class=" owl-carousel border border-1 rounded-3 product-carousel  mb-5 overflow-visible">
+
+                <div class="card  rounded-3 rounded-end-0  prod-card shop-card">
+                    <div
+                        class=" card-icon  d-flex flex-column gap-1 position-absolute custom-pos-btn rounded-1 p-1 fw-medium f-14 text-light">
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-regular fa-heart fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-arrow-right-arrow-left fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-magnifying-glass fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#wishlistModal">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-cart-shopping fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+
+
+
+                    </div>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title f-14">14-inch Fasion Simplicity Quality Wall Clock, Home Decor
+                        </h6>
+                        <h6 class="h5 f-18">$50
+                            <span class="text-decoration-line-through h6 text-secondary">$70</span>
+                        </h6>
+
+                    </div>
+                </div>
+                <div class="card  rounded-3 rounded-end-0  prod-card shop-card">
+                    <div
+                        class=" card-icon  d-flex flex-column gap-1 position-absolute custom-pos-btn rounded-1 p-1 fw-medium f-14 text-light">
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-regular fa-heart fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-arrow-right-arrow-left fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-magnifying-glass fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#wishlistModal">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-cart-shopping fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+
+
+
+                    </div>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title f-14">14-inch Fasion Simplicity Quality Wall Clock, Home Decor
+                        </h6>
+                        <h6 class="h5 f-18">$50
+                            <span class="text-decoration-line-through h6 text-secondary">$70</span>
+                        </h6>
+
+                    </div>
+                </div>
+                <div class="card  rounded-3 rounded-end-0  prod-card shop-card">
+                    <div
+                        class=" card-icon  d-flex flex-column gap-1 position-absolute custom-pos-btn rounded-1 p-1 fw-medium f-14 text-light">
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-regular fa-heart fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-arrow-right-arrow-left fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-magnifying-glass fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#wishlistModal">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-cart-shopping fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+
+
+
+                    </div>
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title f-14">14-inch Fasion Simplicity Quality Wall Clock, Home Decor
+                        </h6>
+                        <h6 class="h5 f-18">$50
+                            <span class="text-decoration-line-through h6 text-secondary">$70</span>
+                        </h6>
+
+                    </div>
+                </div>
+                <div class="card    rounded-0 prod-card shop-card">
+                    <div
+                        class=" card-icon  d-flex flex-column gap-1 position-absolute custom-pos-btn rounded-1 p-1 fw-medium f-14 text-light">
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-regular fa-heart fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-arrow-right-arrow-left fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-magnifying-glass fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#wishlistModal">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-cart-shopping fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+
+
+
+                    </div>
+
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title f-14">14-inch Fasion Simplicity Quality Wall Clock, Home Decor
+                        </h6>
+                        <h6 class="h5 f-18">$50
+                            <span class="text-decoration-line-through h6 text-secondary">$70</span>
+                        </h6>
+
+                    </div>
+                </div>
+                <div class="card   rounded-0 prod-card shop-card">
+                    <div
+                        class=" card-icon  d-flex flex-column gap-1 position-absolute custom-pos-btn rounded-1 p-1 fw-medium f-14 text-light">
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-regular fa-heart fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-arrow-right-arrow-left fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-magnifying-glass fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#wishlistModal">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-cart-shopping fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+
+
+
+                    </div>
+
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title f-14">14-inch Fasion Simplicity Quality Wall Clock, Home Decor
+                        </h6>
+                        <h6 class="h5 f-18">$50
+                            <span class="text-decoration-line-through h6 text-secondary">$70</span>
+                        </h6>
+
+                    </div>
+                </div>
+                <div class="card rounded-3  rounded-0 prod-card shop-card">
+                    <div
+                        class=" card-icon  d-flex flex-column gap-1 position-absolute custom-pos-btn rounded-1 p-1 fw-medium f-14 text-light">
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-regular fa-heart fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-arrow-right-arrow-left fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-magnifying-glass fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#wishlistModal">
+                            <div class="wishlist-wrapper position-relative">
+                                <i
+                                    class="fa-solid fa-cart-shopping fs-5 p-2 bg-color-ee rounded-2 wishlistIcon text-dark"></i>
+                                <div class="wishlist-tooltip">Wishlist</div>
+                            </div>
+                        </a>
+
+
+
+                    </div>
+
+                    <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/05/electronic-14-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title f-14">14-inch Fasion Simplicity Quality Wall Clock, Home Decor
+                        </h6>
+                        <h6 class="h5 f-18">$50
+                            <span class="text-decoration-line-through h6 text-secondary">$70</span>
+                        </h6>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+
+    </section>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" 
+     id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+
+  <div class="offcanvas-header bg-black text-white">
+    
+      <button class="border-0 bg-black text-white  " type="button" data-bs-toggle="offcanvas" 
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+      <i class="fa-solid fa-bars hover-red-text"></i> SHOP BY CATEGORIES
+    </button>
+    
+  </div>
+
+  <div class="offcanvas-body w-100 ">
+    <ul class="category-list w-100 d-flex flex-column gap-3  ">
+    <li class="border-bottom d-flex justify-content-between p-2 "><span class="mx-3"><i class="fa-solid fa-shirt mx-2"></i> Fashion</span> <i class="fa-solid fa-chevron-right mx-3 text-secondary"></i></li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-mobile-screen-button mx-2"></i> Phone & Tablet</span> <i class="fa-solid fa-chevron-right mx-3 text-secondary"></i></li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-laptop mx-2"></i> Laptop & Computer</span> <i class="fa-solid fa-chevron-right mx-3 text-secondary"></i></li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-tv mx-2"></i> TV, Audio – Video</span> <i class="fa-solid fa-chevron-right mx-3 text-secondary"></i></li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-camera mx-2"></i> Camera & Photo</span> </li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-couch mx-2"></i> Home & Decor</span> <i class="fa-solid fa-chevron-right mx-3 text-secondary"></i></li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-heart mx-2"></i> Beauty & Health</span> <i class="fa-solid fa-chevron-right mx-3 text-secondary"></i></li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-gamepad mx-2"></i> Game Accessories</span> </li>
+    <li class="border-bottom d-flex justify-content-between p-2"><span class="mx-3"><i class="fa-solid fa-car mx-2"></i> Autopart</span> <i class="fa-solid fa-chevron-right mx-3 text-secondary"></i></li>
+  </ul>
+  
+
+  
+  </div>
+</div>
+<a href="#" class="bg-dark text-white d-none position-fixed bottom-0 end-0 mb-3 me-3  p-1 rounded" id="topBtn" style="z-index: 9999;">
+  <i class="fa-solid fa-arrow-up fs-5"></i>
+</a>
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-3">
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/logo.png" alt="Merto Logo" class="img-fluid mb-3" style="max-height: 50px;">
+
+        <p class=" text-secondary"><i class="fa-solid fa-location-dot mx-2 text-secondary"></i> 29 St. 2nd Ave, Miami, Florida 33131 </p>
+
+        <p class=" text-secondary"><i class="fa-solid fa-envelope mx-2 text-secondary"></i>merto@example.com</p>
+        <p class="mb-0 fw-bold fs-3 hover-red-text"> (+92) 3942 7879</p>
+      </div>
+
+      
+      <div class="col-md-2">
+        <h6 class="fw-bold mb-3">SHOPPING</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text mb-5">Wishlist</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text  mb-5">Shop by Brand</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text  mb-5">Offers</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text  mb-5">Track Order</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text  mb-5">Size Guide</a></li>
+        </ul>
+      </div>
+
+        
+      <div class="col-md-2">
+        <h6 class="fw-bold mb-3">INFORMATION</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">Track Order</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">Shipping & Returns</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">About us</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">Help</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">Gift Cards</a></li>
+        </ul>
+      </div>
+
+     
+      <div class="col-md-2">
+        <h6 class="fw-bold mb-3">ACCOUNT</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">Cart</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">My Account</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">My Orders</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">Wishlist</a></li>
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-red-text">Affiliate Program</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="col-md-3">
+      <h6 class="fw-bold mb-5">Let’s keep in touch</h6>
+  
+ <form class="position-relative mb-4" style="max-width: 400px;">
+  <input type="email" class="form-control bg-dark text-light pe-5 placeholder-dark border-light border-opacity-25" placeholder="enter your email address">
+
+
+
+  <button type="submit"
+          class="bg-transparent position-absolute top-50 end-0 translate-middle-y me-3 text-white p-0 border-0  text-light text-opacity-25 hover-red-text">
+    <i class="fa-solid fa-arrow-right fs-5"></i>
+  </button>
+</form>
+
+  
+  <div class="d-flex gap-3">
+    <a href="#"><i class="fa-brands fa-facebook-f text-white fs-5 hover-red-text"></i></a>
+    <a href="#"><i class="fa-brands fa-tiktok text-white fs-5 hover-red-text"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube text-white fs-5 hover-red-text"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter text-white fs-5 hover-red-text"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram text-white fs-5 hover-red-text"></i></a>
+  </div>
+</div>
+
+    </div>
+
+
+    <div class="row mt-5 text-center border p-5 border-light border-opacity-25">
+      <div class="col-md-4 mb-4 mb-md-0">
+  <div class="d-flex align-items-start gap-3">
+    <i class="fa-solid fa-phone mt-1 fs-4 "></i>
+    <div class="text-start">
+      <p class="mb-0 fw-bold">Didn't find what you were looking for?</p>
+      <a href="#" class="text-white text-decoration-underline fw-bold">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4 mb-md-0">
+  <div class="d-flex align-items-start gap-3">
+   <i class="fa-solid fa-face-smile fs-4"></i>
+    <div class="text-start">
+      <p class="mb-0 fw-bold">How can we help you today? </p>
+      <a href="#" class="text-white text-decoration-underline fw-bold">Help Center</a>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="col-md-4 mb-4 mb-md-0">
+  <div class="d-flex align-items-start gap-3">
+   <i class="fa-regular fa-circle fs-4"></i>
+    <div class="text-start">
+      <p class="mb-0 fw-bold">We'd love to hear what you think </p>
+      <a href="#" class="text-white text-decoration-underline fw-bold">Give Feedback</a>
+    </div>
+  </div>
+</div>
+    </div>
+
+    
+    <div class="row mt-4 align-items-center text-center">
+      <div class="col-md-6 mb-3 mb-md-0 text-start">
+       <small class="text-white-50">Copyright © Merto. All Rights Reserved</small>
+      </div>
+      <div class="col-md-6 text-end">
+        <img src="https://merto-be87.kxcdn.com/merto/wp-content/uploads/2024/04/payment-icons-1.png" alt="Payment Icons" class="img-fluid" style="max-height: 40px;">
+      </div>
+    </div>
+
+   
+  </div>
+</footer>
+   
+    
+    
+   
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-..."
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const menuBtn = document.getElementById("headerMenuToggleBtn");
+          const secondNavbar = document.getElementById("secondNavbar");
+          const topBtn = document.getElementById("topBtn");
+      
+          window.addEventListener("scroll", function () {
+            if (window.scrollY > 100) {
+              menuBtn.style.display = "inline-block";
+            } else {
+              menuBtn.style.display = "none";
+              secondNavbar.classList.remove("hide-navbar");
+            }
+      
+            if (window.scrollY > 300) {
+              topBtn.classList.remove("d-none");
+            } else {
+              topBtn.classList.add("d-none");
+            }
+          });
+      
+          if (menuBtn) {
+            menuBtn.addEventListener("click", function (e) {
+              e.preventDefault();
+              secondNavbar.classList.toggle("hide-navbar");
+            });
+          }
+      
+          if (topBtn) {
+            topBtn.addEventListener("click", function (e) {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+          }
+        });
+      </script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("headerMenuToggleBtn");
+    const secondNavbar = document.getElementById("secondNavbar");
+    const topBtn = document.getElementById("topBtn");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 100) {
+        menuBtn.style.display = "inline-block";
+      } else {
+        menuBtn.style.display = "none";
+        secondNavbar.classList.remove("hide-navbar");
+      }
+      if (window.scrollY > 300) {
+        topBtn.classList.remove("d-none");
+      } else {
+        topBtn.classList.add("d-none");
+      }
+    });
+
+    menuBtn.addEventListener("click", function () {
+      secondNavbar.classList.toggle("hide-navbar");
+    });
+    topBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+</script>
+    
+    <script>
+       
+        $(document).ready(function() {
+            console.log('Tab script loaded');
+            console.log('Found tab buttons:', $('.tab-btn').length);
+            
+            $('.tab-btn').first().addClass('active text-dark').removeClass('text-secondary');
+            $('.tab-box').addClass('d-none');
+            $('#div1').removeClass('d-none');
+            
+            $('.tab-btn').click(function(e) {
+                e.preventDefault();
+                console.log('Tab clicked:', $(this).text());
+                $('.tab-btn').removeClass('active text-dark').addClass('text-secondary');
+            
+                $(this).addClass('active text-dark').removeClass('text-secondary');
+                
+                $('.tab-box').addClass('d-none');
+                
+                var target = $(this).data('target');
+                console.log('Target:', target);
+                $(target).removeClass('d-none');
+            });
+        });
+
+        
+        $(document).ready(function() {
+            console.log('Image carousel script loaded');
+            var carousel = new bootstrap.Carousel(document.getElementById('carouselExampleIndicators'), {
+                interval: false, 
+                wrap: false, 
+                touch: false,
+                keyboard: false 
+            });
+           
+            $('.barbie-indicators').click(function() {
+                var slideIndex = $(this).data('bs-slide-to');
+                console.log('Thumbnail clicked, slide index:', slideIndex);
+               
+                $('.barbie-indicators').removeClass('active');
+                
+                $(this).addClass('active');
+                
+                carousel.to(slideIndex);
+            });
+            
+            $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
+                var slideIndex = e.to;
+                console.log('Carousel changed to slide:', slideIndex);
+               
+                $('.barbie-indicators').removeClass('active');
+                $('.barbie-indicators[data-bs-slide-to="' + slideIndex + '"]').addClass('active');
+            });
+        });
+
+       
+    </script>
+<script >
+    
+    document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("headerMenuToggleBtn");
+    const secondNavbar = document.getElementById("secondNavbar");
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 100) {
+        menuBtn.style.display = "inline-block";
+      } else {
+        menuBtn.style.display = "none";
+        secondNavbar.classList.remove("hide-navbar"); 
+      }
+    });
+    menuBtn.addEventListener("click", function () {
+      secondNavbar.classList.toggle("hide-navbar");
+    });
+  });
+ 
+</script>
+
+</body>
+
+</html>
